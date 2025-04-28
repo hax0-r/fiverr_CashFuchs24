@@ -14,10 +14,10 @@ navbar.innerHTML = `
                             class="hover:text-[#6c2313] tracking-wide font-medium transition-all duration-500">Cashback
                             Club</a>
                     </li>
-                    <li><a href="./products.html"
+                    <li><a href="./premiumgewinnspiele.html"
                             class="hover:text-[#6c2313] tracking-wide font-medium transition-all duration-500">Premiumgewinnspiele</a>
                     </li>
-                    <li><a href="./contactUs.html"
+                    <li><a href="/index.html#faq"
                             class="hover:text-[#6c2313] tracking-wide font-medium transition-all duration-500">FAQ</a></li>
                 </ul>
                 <button
@@ -30,33 +30,33 @@ navbar.innerHTML = `
     <div id="mobileMenu"
         class="fixed left-0 top-0 bg-white max-w-[30rem] w-0 overflow-hidden h-screen z-50 transition-all duration-500">
         <div class="flex items-end justify-end p-5">
-            <i id="mobileMenuCloseBtn" class="fa-solid fa-x z-50 text-slate-700 text-xl cursor-pointer"></i>
+            <i class="fa-solid mobileMenuCloseBtn fa-x z-50 text-slate-700 text-xl cursor-pointer"></i>
         </div>
         <div class="p-6">
             <ul class="flex relative z-50 flex-col gap-7">
                 <li><a href="./index.html"
                         class="hover:text-[#6c2313] text-nowrap tracking-wide transition-all duration-500">Home</a></li>
                 <li class="">
-                    <button onclick="toggleAccordion(7)" class="w-full flex justify-between items-center">
+                    <button onclick="toggleAccordion(1)" class="w-full flex justify-between items-center">
                         <p class="text-nowrap">Cashback Club</p>
-                        <i id="dropdownIcon"
+                        <i id="icon-1"
                             class="fa-solid fa-angle-down text-slate-800 transition-transform duration-300"></i>
                     </button>
-                    <div id="content-7" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="pb-5">
                             <ul class="space-y-6 pl-3 pt-6 text-zinc-800">
-                                <li><a @click="handleClick()" class="text-nowrap" href="#">Online-Shopping Cashback</a></li>
-                                <li><a @click="handleClick()" class="text-nowrap" href="/#">Offline-Shopping Cashback</a></li>
-                                <li><a @click="handleClick()" class="text-nowrap" href="/#">Qeise-Cashback</a></li>
+                                <li><a class="text-nowrap" href="#">Online-Shopping Cashback</a></li>
+                                <li><a class="text-nowrap" href="/#">Offline-Shopping Cashback</a></li>
+                                <li><a class="text-nowrap" href="/#">Qeise-Cashback</a></li>
                             </ul>
                         </div>
                     </div>
                 </li>
-                <li><a href="./products.html"
+                <li><a href="./premiumgewinnspiele.html"
                         class="hover:text-[#6c2313] text-nowrap tracking-wide transition-all duration-500">Premiumgewinnspiele</a>
                 </li>
-                <li><a href="./contactUs.html"
-                        class="hover:text-[#6c2313] text-nowrap tracking-wide transition-all duration-500">FAQ</a></li>
+                <li><a href="/index.html#faq"
+                        class="hover:text-[#6c2313] mobileMenuCloseBtn text-nowrap tracking-wide transition-all duration-500">FAQ</a></li>
             </ul>
             <button
                 class="py-3 px-7 mt-10 rounded-md w-full transition-all duration-500 hover:opacity-80 bg-[#0d1834] text-white font-medium tracking-wide cursor-pointer">Absenden</button>
@@ -67,26 +67,28 @@ navbar.innerHTML = `
 
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
-const mobileMenuCloseBtn = document.getElementById("mobileMenuCloseBtn");
+const mobileMenuCloseBtns = document.querySelectorAll(".mobileMenuCloseBtn");
 
 mobileMenuBtn.addEventListener("click", () => {
     mobileMenu.style.width = "100%";
 });
 
-mobileMenuCloseBtn.addEventListener("click", () => {
-    mobileMenu.style.width = "0";
+mobileMenuCloseBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        mobileMenu.style.width = "0";
+    });
 });
+
 
 function toggleAccordion(index) {
     const content = document.getElementById(`content-${index}`);
-    const dropdownIcon = document.getElementById(`dropdownIcon`);
     const icon = document.getElementById(`icon-${index}`);
 
     if (content.style.maxHeight && content.style.maxHeight !== '0px') {
         content.style.maxHeight = '0';
-        dropdownIcon.classList.remove('rotate-180')
+        icon.classList.remove('rotate-180')
     } else {
         content.style.maxHeight = content.scrollHeight + 'px';
-        dropdownIcon.classList.add('rotate-180')
+        icon.classList.add('rotate-180')
     }
 }
