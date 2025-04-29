@@ -9,24 +9,38 @@ navbar.innerHTML = `
             <div class="md:flex items-center gap-10 hidden">
                 <ul class="md:flex hidden items-center gap-7">
                     <li><a href="./index.html"
-                            class="hover:text-[#6c2313] tracking-wide font-medium transition-all duration-500">Home</a></li>
-                    <li><a href="./about-us.html"
-                            class="hover:text-[#6c2313] tracking-wide font-medium transition-all duration-500">Cashback
-                            Club</a>
+                            class="hover:text-[#eb6129] tracking-wide font-medium transition-all duration-500">Home </a>
+                    </li>
+                    <li class="relative group"><a
+                            class="hover:text-[#eb6129] cursor-pointer flex items-center gap-2 tracking-wide font-medium transition-all duration-500">Cashback
+                            Club <i
+                                class="fa-solid fa-angle-down group-hover:rotate-180 transition-all duration-500"></i>
+                            <div
+                                class="absolute hidden fadeIn group-hover:flex top-5 pt-3 left-0 bg-white z-30 flex-col">
+                                <a href="/online-shopping-cashback.html"
+                                    class="p-5 hover:bg-[#eb6129] hover:text-white text-nowrap transition-all duration-500 block">Online-Shopping
+                                    Cashback</a>
+                                <a href="/offline-shopping-cashback.html"
+                                    class="p-5 hover:bg-[#eb6129] hover:text-white text-nowrap transition-all duration-500 block">Offline-Shopping
+                                    Cashback</a>
+                                <a href="/reise-cashback.html"
+                                    class="p-5 hover:bg-[#eb6129] hover:text-white text-nowrap transition-all duration-500 block">Reise-Cashback</a>
+                            </div>
+                        </a>
                     </li>
                     <li><a href="./premiumgewinnspiele.html"
-                            class="hover:text-[#6c2313] tracking-wide font-medium transition-all duration-500">Premiumgewinnspiele</a>
+                            class="hover:text-[#eb6129] tracking-wide font-medium transition-all duration-500">Premiumgewinnspiele</a>
                     </li>
                     <li><a href="/index.html#faq"
-                            class="hover:text-[#6c2313] tracking-wide font-medium transition-all duration-500">FAQ</a></li>
+                            class="hover:text-[#eb6129] tracking-wide font-medium transition-all duration-500">FAQ</a>
+                    </li>
                 </ul>
-                <button
-                    class="py-3 px-7 rounded-sm transition-all duration-500 hover:opacity-80 bg-[#0d1834] text-white font-medium tracking-wide cursor-pointer">Absenden</button>
+                <a href="/kontakt.html"
+                    class="py-3 px-7 rounded-sm transition-all duration-500 hover:opacity-80 bg-[#0d1834] text-white font-medium tracking-wide cursor-pointer">Absenden</a>
             </div>
             <i id="mobileMenuBtn" class="fa-solid text-[#eb6028] fa-bars md:!hidden text-2xl cursor-pointer mr-2"></i>
         </div>
     </nav>
-
     <div id="mobileMenu"
         class="fixed left-0 top-0 bg-white max-w-[30rem] w-0 overflow-hidden h-screen z-50 transition-all duration-500">
         <div class="flex items-end justify-end p-5">
@@ -45,9 +59,9 @@ navbar.innerHTML = `
                     <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="pb-5">
                             <ul class="space-y-6 pl-3 pt-6 text-zinc-800">
-                                <li><a class="text-nowrap" href="#">Online-Shopping Cashback</a></li>
-                                <li><a class="text-nowrap" href="/#">Offline-Shopping Cashback</a></li>
-                                <li><a class="text-nowrap" href="/#">Qeise-Cashback</a></li>
+                                <li><a class="text-nowrap" href="/online-shopping-cashback.html">Online-Shopping Cashback</a></li>
+                                <li><a class="text-nowrap" href="/offline-shopping-cashback.html">Offline-Shopping Cashback</a></li>
+                                <li><a class="text-nowrap" href="/reise-cashback.html">Qeise-Cashback</a></li>
                             </ul>
                         </div>
                     </div>
@@ -58,8 +72,8 @@ navbar.innerHTML = `
                 <li><a href="/index.html#faq"
                         class="hover:text-[#6c2313] mobileMenuCloseBtn text-nowrap tracking-wide transition-all duration-500">FAQ</a></li>
             </ul>
-            <button
-                class="py-3 px-7 mt-10 rounded-md w-full transition-all duration-500 hover:opacity-80 bg-[#0d1834] text-white font-medium tracking-wide cursor-pointer">Absenden</button>
+            <a href="/kontakt.html"
+                class="py-3 px-7 mt-10 rounded-md w-full transition-all duration-500 hover:opacity-80 bg-[#0d1834] text-white font-medium tracking-wide cursor-pointer">Absenden</a>
         </div>
     </div>
 `

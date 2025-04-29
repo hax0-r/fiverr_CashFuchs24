@@ -8,35 +8,38 @@ footer.innerHTML = `
                     <img src="/Docs/Assets/logo.png" class="h-12 md:mx-0 mx-auto" alt="">
                 </a>
 
-                <div class="mt-10 md:pl-5">
-
-                    <a href="tel:+03 00 0000 000"
-                        class="flex items-center gap-2.5 transition-all duration-500 hover:text-[#eb6129] text-white"><i
-                            class="fa-solid fa-phone text-lg text-[#eb6129]"></i> 03 00 0000 000</a>
-                    <a href="mailto:post@cashfuchs24.de"
-                        class="flex items-center gap-2.5 transition-all mt-4 duration-500 hover:text-[#eb6129] text-white"><i
-                            class="fa-solid fa-envelope text-xl text-[#eb6129] "></i>post@cashfuchs24.de</a>
-                    <a href="#"
-                        class="flex items-center gap-2.5 transition-all mt-4 duration-500 hover:text-[#eb6129] text-white"><i
-                            class="fa-solid fa-location-dot text-xl text-[#eb6129] "></i>Postfach 2 88 12 10131
-                        Berlin</a>
-
-                </div>
+<div class="mt-10 md:pl-5">
+    <a href="tel:+03 00 0000 000"
+        class="flex items-center gap-2.5 transition-all duration-500 hover:text-[#eb6129] text-white"><i
+            class="fa-solid fa-phone text-lg text-[#eb6129]"></i> 03 00 0000 000</a>
+    <a href="mailto:post@cashfuchs24.de"
+        class="flex items-center gap-2.5 transition-all mt-4 duration-500 hover:text-[#eb6129] text-white"><i
+            class="fa-solid fa-envelope text-xl text-[#eb6129] "></i>post@cashfuchs24.de</a>
+    <a href="#" class="flex items-center gap-2.5 transition-all mt-4 duration-500 hover:text-[#eb6129] text-white"><i
+            class="fa-solid fa-location-dot text-xl text-[#eb6129] "></i>Postfach 2 88 12 10131
+        Berlin</a>
+    <p class="text-white md:my-6 my-4 font-medium">Wir sind werktags von 10:00 Uhr bis 15:00 Uhr telefonisch für Sie erreichbar.</p>
+    <div class="flex items-center gap-10">
+        <a class="hover:text-[#eb6129] text-white transition-all font-medium duration-500" href="/impressum.html"> Impressum</a>
+        <a class="hover:text-[#eb6129] text-white transition-all font-medium duration-500" href="/datenschutz.html">
+            Datenschutz</a>
+    </div>
+</div>
 
             </div>
 
             <div class="w-full text-gray-700">
                 <h2 class="font-semibold text-2xl mb-3 text-white">Links</h2>
                 <ul class="space-y-3 md:mt-6 mt-3 text-zinc-200">
-                    <li><a class="hover:text-[#eb6129] transition-all duration-500" href=""> Online-Shopping
+                    <li><a class="hover:text-[#eb6129] transition-all font-medium duration-500" href="/online-shopping-cashback.html"> Online-Shopping
                             Cashback</a></li>
-                    <li><a class="hover:text-[#eb6129] transition-all duration-500" href=""> Offline-Shopping
+                    <li><a class="hover:text-[#eb6129] transition-all font-medium duration-500" href="/offline-shopping-cashback.html"> Offline-Shopping
                             Cashback</a></li>
-                    <li><a class="hover:text-[#eb6129] transition-all duration-500" href=""> Reise-Cashback</a></li>
-                    <li><a class="hover:text-[#eb6129] transition-all duration-500" href=""> Premiumgewinnspiele</a>
+                    <li><a class="hover:text-[#eb6129] transition-all font-medium duration-500" href="/reise-cashback.html"> Reise-Cashback</a></li>
+                    <li><a class="hover:text-[#eb6129] transition-all font-medium duration-500" href="/premiumgewinnspiele.html"> Premiumgewinnspiele</a>
                     </li>
-                    <li><a class="hover:text-[#eb6129] transition-all duration-500" href=""> Kontakt</a></li>
-                    <li><a class="hover:text-[#eb6129] transition-all duration-500" href=""> FAQ</a></li>
+                    <li><a class="hover:text-[#eb6129] transition-all font-medium duration-500" href="/kontakt.html"> Kontakt</a></li>
+                    <li><a class="hover:text-[#eb6129] transition-all font-medium duration-500" href="/index.html#faq"> FAQ</a></li>
                 </ul>
             </div>
 
