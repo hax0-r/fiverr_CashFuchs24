@@ -73,7 +73,7 @@ navbar.innerHTML = `
                         class="hover:text-[#6c2313] mobileMenuCloseBtn text-nowrap tracking-wide transition-all duration-500">FAQ</a></li>
             </ul>
             <a href="/kontakt.html"
-                class="py-3 px-7 mt-10 rounded-md w-full transition-all duration-500 hover:opacity-80 bg-[#0d1834] text-white font-medium tracking-wide cursor-pointer">Absenden</a>
+                class="py-3 px-7 block text-center mt-5 rounded-md w-full transition-all duration-500 hover:opacity-80 bg-[#0d1834] text-white font-medium tracking-wide cursor-pointer">Absenden</a>
         </div>
     </div>
 `
